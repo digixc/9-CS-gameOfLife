@@ -1,0 +1,146 @@
+#+STARTUP:indent
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+#+HTML_HEAD_EXTRA: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+#+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil 
+#+TITLE: The Game of Life
+#+AUTHOR: Stephen Brown
+
+#+BEGIN_HTML
+<div class=ribbon>
+<a href="https://github.com/stsb11/9-CS-gameOfLife">Fork me on GitHub</a>
+</div>
+#+END_HTML
+
+* COMMENT Use as a template
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Learn It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+
+** Research It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: research
+:END:
+
+** Design It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: design
+:END:
+
+** Build It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: build
+:END:
+
+** Test It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: test
+:END:
+
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
+
+** Document It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: document
+:END:
+
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+
+** Program It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: program
+:END:
+
+** Try It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+
+** Badge It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: badge
+:END:
+
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+
+* Growing up
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+- While it sounds an obvious point, one day you'll be an adult. 
+- One of the many challenges you'll face is learning to keep on top of your finances. 
+- You'll likely have a job with pays you once a month.
+- You'll also have lots of different bills to pay and some unpredictable financial 'bumps in the road' as you go along, like unexpected car repair bills.
+- In this topic, you'll use spreadsheet software to plan a budget, using real-world figures. 
+- Can you avoid the overdraft?
+** Learn It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- We'll start by getting you a job. 
+- Open [[http://www.monster.co.uk][www.Monster.co.uk]] in a new browser tab.
+- Search for jobs in a 15 mile radius of the School's postcode (PE10 9JE)
+- Find 3 different jobs that you could get which will take someone with no prior experience.
+- Some of the jobs will quote an hourly rate (e.g. £10 per hour). Others will show an annual salary (e.g. £15k per year). 
+- Let's start by looking at a job with an hourly rate; the least this will be in the [[https://bournetoinvent.com/projects/9-SC-Flyer/1.html][National Minimum wage]], which in 2016 is £6.70 for someone aged 21 to 24. This goes up to £7.20 once you turn 25. 
+- Calculating how much tax you'll pay as adult is complicated. Online tools such as [[http://www.moneysavingexpert.com/tax-calculator/][this one]] can give you good indication though. Earning the minimum wage (or close to it) means that you won't pay very much tax at all. This increases as your earnings go up.
+- Our model will assume you pay a third of your pay in tax and pension contributions, although things aren't quite that simple in real life.
+- We'll make a rough-and-ready pay calculator to estimate how much pay you could take home after you've paid your [[http://www.bbc.co.uk/news/uk-england-16744819][tax]] and [[https://www.gov.uk/national-insurance/what-national-insurance-is-for][National Insurance]]. 
+** Download It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: document
+:END:
+- Download [[./doc/budget.xlsx][this file]] to your H: drive, and save it in a new folder.
+** Try It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+- We'll need to write some formulae to perform our calculations.
+- Locate cell =C6= and enter the following: ==C3*C4=. On spreadsheets, we tell Excel we want to use a formula by starting with an equals sign.
+- What has this done in the cell? 
+- If you choose a job with an hourly rate, you'll need to calculate the annual salary. Next, we'll calculate our /take-home/ pay in cell =C10=.
+- You'll need to use the value in cell =C6= and take away the deductions in =C7=.
+- Next, try and calculate the monthly /take-home/ pay in cell =C11=. There are (on average) about 4.5 weeks in a month.
+- Finally, calculate the annual take-home salary in =C12=. 
+- Once your formulae are complete, try answering these questions:
+  - How much more do you earn in a week if your pay went up to £10 an hour?
+  - What if you're on £10 an hour *and* you decide to only work four days a week (30 hours)?
+** Learn It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- Some jobs are advertised by hourly rate, and others by annual salary.
+- Calculating the hourly rate of a salaried post makes it possible to compare two different jobs to see which is better paid.
+- You'll need to know a few things first though.
+- To start with, you'll need to know how many days you actually work in a year (we'll assume 365 days a year).
+- In the UK, full-time (i.e. 37.5 hours a week) workers are entitled to 28 days of paid holiday a year. We'll 
+- People tend to work 5 days a week, so we'll need to know how many Saturdays and Sundays there are in a year.
+- We can take the holiday and weekend days from 365 to see how many work days there are in a year.
+- A standard 9am-5pm working day includes a 30 minute (usually unpaid) lunch break. That's 7.5 hours paid work every day.
+** Try It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+- Use the data above to complete cells =C19=, =C20= and =C21=. 
+- Write formulae in cells =C23=, =C24= and =C25= to calculate the hourly rate for a job paying £15,000 per year. 
+- Is that more or less than the minimum wage for someone aged 23?
+** Badge  It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: badge
+:END:
+- Complete the formulae above.
+- *Silver:* What is the hourly rate for someone on £20,000 a year?
+- *Gold:* Find the average UK annual salary, and calculate what this is as an hourly rate. What is the weekly /take-home/ pay for this salary?
+- *Platinum:* What is the pre-tax (i.e. not take-home) salary of someone earning £30 per hour?

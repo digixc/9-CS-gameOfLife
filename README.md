@@ -1,2 +1,4 @@
-# 9-CS-gameOfLife
-BGS Game of Life ICT topic
+Template-SOW
+============
+
+A Template Scheme Of Work for Computing and Systems &amp; Control

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>The Game of Life</title>
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">The Game of Life</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. Growing up</a>
+<ul>
+<li><a href="#sec-1-1">Learn It</a></li>
+<li><a href="#sec-1-2">Download It</a></li>
+<li><a href="#sec-1-3">Try It</a></li>
+<li><a href="#sec-1-4">Learn It</a></li>
+<li><a href="#sec-1-5">Try It</a></li>
+<li><a href="#sec-1-6">Badge  It</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class=ribbon>
+<a href="https://github.com/stsb11/9-CS-gameOfLife">Fork me on GitHub</a>
+</div>
+
+<div id="outline-container-sec-1" class="outline-2 activity">
+<h2 id="sec-1"><span class="section-number-2">1</span> Growing up</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>While it sounds an obvious point, one day you'll be an adult. 
+</li>
+<li>One of the many challenges you'll face is learning to keep on top of your finances. 
+</li>
+<li>You'll likely have a job with pays you once a month.
+</li>
+<li>You'll also have lots of different bills to pay and some unpredictable financial 'bumps in the road' as you go along, like unexpected car repair bills.
+</li>
+<li>In this topic, you'll use spreadsheet software to plan a budget, using real-world figures. 
+</li>
+<li>Can you avoid the overdraft?
+</li>
+</ul>
+</div>
+<div id="outline-container-sec-1-1" class="outline-3 learn">
+<h3 id="sec-1-1">Learn It</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li>We'll start by getting you a job. 
+</li>
+<li>Open <a href="http://www.monster.co.uk">www.Monster.co.uk</a> in a new browser tab.
+</li>
+<li>Search for jobs in a 15 mile radius of the School's postcode (PE10 9JE)
+</li>
+<li>Find 3 different jobs that you could get which will take someone with no prior experience.
+</li>
+<li>Some of the jobs will quote an hourly rate (e.g. £10 per hour). Others will show an annual salary (e.g. £15k per year). 
+</li>
+<li>Let's start by looking at a job with an hourly rate; the least this will be in the <a href="https://bournetoinvent.com/projects/9-SC-Flyer/1.html">National Minimum wage</a>, which in 2016 is £6.70 for someone aged 21 to 24. This goes up to £7.20 once you turn 25. 
+</li>
+<li>Calculating how much tax you'll pay as adult is complicated. Online tools such as <a href="http://www.moneysavingexpert.com/tax-calculator/">this one</a> can give you good indication though. Earning the minimum wage (or close to it) means that you won't pay very much tax at all. This increases as your earnings go up.
+</li>
+<li>Our model will assume you pay a third of your pay in tax and pension contributions, although things aren't quite that simple in real life.
+</li>
+<li>We'll make a rough-and-ready pay calculator to estimate how much pay you could take home after you've paid your <a href="http://www.bbc.co.uk/news/uk-england-16744819">tax</a> and <a href="https://www.gov.uk/national-insurance/what-national-insurance-is-for">National Insurance</a>. 
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-1-2" class="outline-3 document">
+<h3 id="sec-1-2">Download It</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li>Download <a href="./doc/budget.xlsx">this file</a> to your H: drive, and save it in a new folder.
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-1-3" class="outline-3 try">
+<h3 id="sec-1-3">Try It</h3>
+<div class="outline-text-3" id="text-1-3">
+<ul class="org-ul">
+<li>We'll need to write some formulae to perform our calculations.
+</li>
+<li>Locate cell <code>C6</code> and enter the following: <code>=C3*C4</code>. On spreadsheets, we tell Excel we want to use a formula by starting with an equals sign.
+</li>
+<li>What has this done in the cell? 
+</li>
+<li>If you choose a job with an hourly rate, you'll need to calculate the annual salary. Next, we'll calculate our <i>take-home</i> pay in cell <code>C10</code>.
+</li>
+<li>You'll need to use the value in cell <code>C6</code> and take away the deductions in <code>C7</code>.
+</li>
+<li>Next, try and calculate the monthly <i>take-home</i> pay in cell <code>C11</code>. There are (on average) about 4.5 weeks in a month.
+</li>
+<li>Finally, calculate the annual take-home salary in <code>C12</code>. 
+</li>
+<li>Once your formulae are complete, try answering these questions:
+<ul class="org-ul">
+<li>How much more do you earn in a week if your pay went up to £10 an hour?
+</li>
+<li>What if you're on £10 an hour <b>and</b> you decide to only work four days a week (30 hours)?
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-1-4" class="outline-3 learn">
+<h3 id="sec-1-4">Learn It</h3>
+<div class="outline-text-3" id="text-1-4">
+<ul class="org-ul">
+<li>Some jobs are advertised by hourly rate, and others by annual salary.
+</li>
+<li>Calculating the hourly rate of a salaried post makes it possible to compare two different jobs to see which is better paid.
+</li>
+<li>You'll need to know a few things first though.
+</li>
+<li>To start with, you'll need to know how many days you actually work in a year (we'll assume 365 days a year).
+</li>
+<li>In the UK, full-time (i.e. 37.5 hours a week) workers are entitled to 28 days of paid holiday a year. We'll 
+</li>
+<li>People tend to work 5 days a week, so we'll need to know how many Saturdays and Sundays there are in a year.
+</li>
+<li>We can take the holiday and weekend days from 365 to see how many work days there are in a year.
+</li>
+<li>A standard 9am-5pm working day includes a 30 minute (usually unpaid) lunch break. That's 7.5 hours paid work every day.
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-1-5" class="outline-3 try">
+<h3 id="sec-1-5">Try It</h3>
+<div class="outline-text-3" id="text-1-5">
+<ul class="org-ul">
+<li>Use the data above to complete cells <code>C19</code>, <code>C20</code> and <code>C21</code>. 
+</li>
+<li>Write formulae in cells <code>C23</code>, <code>C24</code> and <code>C25</code> to calculate the hourly rate for a job paying £15,000 per year. 
+</li>
+<li>Is that more or less than the minimum wage for someone aged 23?
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-1-6" class="outline-3 badge">
+<h3 id="sec-1-6">Badge  It</h3>
+<div class="outline-text-3" id="text-1-6">
+<ul class="org-ul">
+<li>Complete the formulae above.
+</li>
+<li><b>Silver:</b> What is the hourly rate for someone on £20,000 a year?
+</li>
+<li><b>Gold:</b> Find the average UK annual salary, and calculate what this is as an hourly rate. What is the weekly <i>take-home</i> pay for this salary?
+</li>
+<li><b>Platinum:</b> What is the pre-tax (i.e. not take-home) salary of someone earning £30 per hour?
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="validation"></p>
+</div>
+</body>
+</html>
