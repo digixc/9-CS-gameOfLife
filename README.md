@@ -1,4 +1,6 @@
-Template-SOW
-============
+9-CS-gameOfLife
+===============
 
-A Template Scheme Of Work for Computing and Systems &amp; Control
+Y9 Computer Science unit - the Game of Life.
+
+Spreadsheet module.
