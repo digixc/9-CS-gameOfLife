@@ -1,0 +1,108 @@
+#+STARTUP:indent
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+#+HTML_HEAD_EXTRA: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+#+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil 
+#+TITLE: The Game of Life
+#+AUTHOR: Stephen Brown
+
+#+BEGIN_HTML
+<div class=ribbon>
+<a href="https://github.com/stsb11/9-CS-gameOfLife">Fork me on GitHub</a>
+</div>
+#+END_HTML
+
+* COMMENT Use as a template
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Learn It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+
+** Research It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: research
+:END:
+
+** Design It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: design
+:END:
+
+** Build It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: build
+:END:
+
+** Test It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: test
+:END:
+
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
+
+** Document It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: document
+:END:
+
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+
+** Program It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: program
+:END:
+
+** Try It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+
+** Badge It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: badge
+:END:
+
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+
+* Household Bills 
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+- These are some typical running monthly costs for a 3-bedroom semi-detatched house.
+- Your own home bills may be more or less, depending on how many people live at the proprty, how modern it is, the are you live in and so on...
+  - Electricity: £80 
+  - Gas: £80
+  - Water: £45
+  - Council Tax: £120
+  - Home insurance: £30
+  - Car insurance: £60
+  - Boiler breakdown insurance: £25
+  - Mobile 'phone: £ 25
+  - Landline + Broadband: £45
+  - Car loan repayment: £200
+  - Food shopping: £350
+  - Petrol/Diesel: £100
+  - TV Licence: £11
+
+- As one-off costs, you might find yourself unexpectedly having to pay...
+  - Vet's bill: £100
+  - Car repair: £250+
+  - Opticians: £125
+  - Saving for a Summer holiday: £100 a month
+  - Credit card payment: £100
+  - Dentist bill: £100
+  - Road Tax: £150
+  - Household repairs: £100
+  - Replacing broken TV: £150
+  - Replace broken kitchen appliance: £150

@@ -1,0 +1,124 @@
+#+STARTUP:indent
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+#+HTML_HEAD_EXTRA: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+#+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil 
+#+TITLE: The Game of Life
+#+AUTHOR: Stephen Brown
+
+#+BEGIN_HTML
+<div class=ribbon>
+<a href="https://github.com/stsb11/9-CS-gameOfLife">Fork me on GitHub</a>
+</div>
+#+END_HTML
+
+* COMMENT Use as a template
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Learn It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+
+** Research It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: research
+:END:
+
+** Design It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: design
+:END:
+
+** Build It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: build
+:END:
+
+** Test It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: test
+:END:
+
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
+
+** Document It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: document
+:END:
+
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+
+** Program It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: program
+:END:
+
+** Try It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+
+** Badge It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: badge
+:END:
+
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+
+* Family fortunes
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+- One day, perhaps you'll start a family. 
+- In this lesson, we'll explore the financial cost of having a child, using real-world figures.
+** Learn It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- There are many possible ways to go about working while raising a child. We'll look at one particular example, but you could model others using this spreadsheet.
+- Let's assume that we have parent A (£25000pa salary) and parent B (£15000pa salary).
+- After our hypothetical child is born, parent A goes back to work full time and parent B stays at home to care for the child.
+- If the mother of the child is parent B, she will be entitled to statutory maternity pay which is worth £128.73 a week.
+** Document It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: document
+:END:
+- Download and open [[doc/baby_budget.xls][this]] version of the spreadsheet.
+- Add the *monthly* salary (approx 4.5 weeks in a month, remember) to cell =D8=.
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+- Newborn babies will soil their nappies a lot; you'll need to budget for 10 nappies a day.
+- Go online and find out how much nappies cost. You could use brand-name ones, or supermarket own-brand ones.
+- What's the monthly bill for nappies in a 30 day month? Add this to cell =G19=.
+- Babies grow very quickly. Clothes will likely only be worn a few times before they're too small and need replacing. 
+- Thankfully, baby clothes from supermarkets are relatively low-cost; we'll allow £40 a month for this in cell =G19=. 
+- In addition to your normal weekly shop, you'll now need baby bath, Calpol, bibs, dummies and other miscellaneous bits and bobs. We'll allow another £25 a month for this in cell =G20=. 
+- Some mothers choose not to breast-feed. Formula milk costs approximately £9 a tin, and lasts 4 days. Add this to your budget if desired, in cell =G21=.
+
+
+- You'll use your washing machine and central heating more. Add £5 to your electric and gas bills.
+** Document It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: document
+:END:
+- You've now got a problem.
+- There is a negative amount of disposable income for your household; you can't afford to live with these current expenses.
+- Something has to go. Look over your outgoings - what would you get rid of first to reduce your outgoings? You need your balance figure to get to at least zero, but ideally to become a positive figure.
+- Having a whole month where you literally do nothing apart from go to work and come back isn't much fun. 
+** Badge It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: badge
+:END:
+- *Silver:* Identify three possible areas where you could reduce your monthly costs. Apply one or more of these to your spreadsheet, and upload it to BourneToLearn for marking.
