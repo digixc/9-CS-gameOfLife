@@ -10,88 +10,20 @@
 <a href="https://github.com/stsb11/9-CS-gameOfLife">Fork me on GitHub</a>
 </div>
 #+END_HTML
-* [[file:pages/1_Lesson.html][Lesson 1 - Starting out]]
+* [[file:pages/1_Lesson.html][Lesson 1 - Earning a crust]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: link-heading
 :END:
-* [[file:docs/2_Lesson.html][Lesson 2 - Paying the Bills]]
+* [[file:docs/2_Lesson.html][Lesson 2 - I got bills]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: link-heading
 :END:
-* [[http://filestore.aqa.org.uk/subjects/AQA-GCSE-COMPSCI-W-SP.PDF][AQA GCSE CS Specification]]
+* [[pages/Lesson_3.html][Lesson 3 - Rent or Buy?]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: link-heading
 :END:
-* [[file:pages/3-1-5-Scope.html][3.1.5 Scope]]
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: link-heading
-:END:
-* [[file:pages/3-1-8-3.html][3.1.8.3 The CPU]]
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: link-heading
-:END:
-* [[file:pages/3-1-8-4.html][3.1.8.4 Memory]]
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: link-heading
-:END:
-* [[file:pages/3-1-8-SecondaryStorage.html][3.1.8.4 Secondary Storage]]
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: link-heading
-:END:
-* [[file:pages/3-1-9-Algorithms.html][3.1.9 Algorithms]]
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: link-heading
-:END:
-* [[file:pages/3-1-9-Pseudocode_Algorithms.html][3.1.9 Pseudocode Algorithms]]
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: link-heading
-:END:
-* [[file:pages/3-1-9-Algorithms-Practice.html][3.1.9 Pseudocode Algorithms Practice]]
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: link-heading
-:END:
-* [[file:pages/3.1.10-Hex.html][3.1.10 Hexadecimal]]
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: link-heading
-:END:
-* [[file:pages/3-1-10-RepresentingImages.html][3-1-10 Images]]
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: link-heading
-:END:
-* [[file:pages/3.1.10-Sound.html][3.1.10 Sound]]
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: link-heading
-:END:
-* [[file:pages/3-1-10-Questions.html][3.1.10 Questions]]
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: link-heading
-:END:
-* [[file:pages/3-1-11-Software-development-life-cycle.html][3.1.11 The Software Development Life Cycle]]
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: link-heading
-:END:
-* [[file:pages/3-1-11-1-Prototyping.html][3.1.11.1 Prototyping]]
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: link-heading
-:END:
-* [[file:pages/3-1-12-Testing.html][3.1.12 Testing]]
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: link-heading
-:END:
-* [[file:pages/3-1-13-Networking.html][3.1.13 Networking]]
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: link-heading
-:END:
-* [[file:pages/3-1-15-Database_concepts.html][3.1.15 Database concepts]]
+* [[pages/Lesson_4.html][Lesson 4 - Broom broom!]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: link-heading
 :END:
 
-* [[file:pages/3-1-15-SQL.html][3.1.15 SQL]]
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: link-heading
-:END:
-* [[file:pages/Exam_Practice.html][Exam Practice]]
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: link-heading
-:END:
