@@ -10,24 +10,23 @@
 <a href="https://github.com/stsb11/9-CS-gameOfLife">Fork me on GitHub</a>
 </div>
 #+END_HTML
-* [[file:pages/1_Lesson.html][Lesson 1 - Earning a crust]]
+* [[file:pages/Lesson_1.html][Lesson 1 - Earning a crust]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: link-heading
 :END:
-* [[file:docs/2_Lesson.html][Lesson 2 - I got bills]]
+* [[file:pages/Lesson_2.html][Lesson 2 - I got bills]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: link-heading
 :END:
-* [[pages/Lesson_3.html][Lesson 3 - Rent or Buy?]]
+* [[./pages/Lesson_3.html][Lesson 3 - Rent or Buy]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: link-heading
 :END:
-* [[pages/Lesson_4.html][Lesson 4 - Broom broom!]]
+* [[./pages/Lesson_4.html][Lesson 4 - Broom broom!]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: link-heading
 :END:
-* [[pages/Lesson_5.html][Lesson 4 - Family Fortunes]]
+* [[./pages/Lesson_5.html][Lesson 5 - Family Fortunes]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: link-heading
 :END:
-
