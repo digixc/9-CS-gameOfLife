@@ -79,12 +79,18 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
-- While it sounds an obvious point, one day you'll be an adult. 
+- One day you'll be an adult. 
 - One of the many challenges you'll face is learning to keep on top of your finances. 
 - You'll likely have a job with pays you once a month.
 - You'll also have lots of different bills to pay and some unpredictable financial 'bumps in the road' as you go along, like unexpected car repair bills.
 - In this topic, you'll use spreadsheet software to plan a budget, using real-world figures. 
 - Can you avoid the overdraft?
+** Download It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: document
+:END:
+- Download [[./doc/budget.xlsx][this file]] to your H: drive, and save it in a new folder.
+- Open the spreadsheet in Excel.
 ** Learn It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
@@ -92,17 +98,12 @@
 - We'll start by getting you a job. 
 - Open [[http://www.monster.co.uk][www.Monster.co.uk]] in a new browser tab.
 - Search for jobs in a 15 mile radius of the School's postcode (PE10 9JE)
-- Find 3 different jobs that you could get which will take someone with no prior experience.
-- Some of the jobs will quote an hourly rate (e.g. £10 per hour). Others will show an annual salary (e.g. £15k per year). 
+- Find 3 different jobs that you could get which will take someone with no prior experience. Record how much they pay in the provided cells from =F4= to =H6=. 
+- Some of the jobs will quote an hourly rate (e.g. £10 per hour). Others will show an annual salary (e.g. £15k per year). Don't worry about this for now; just record the details available.  
 - Let's start by looking at a job with an hourly rate; the least this will be in the [[https://bournetoinvent.com/projects/9-SC-Flyer/1.html][National Minimum wage]], which in 2016 is £6.70 for someone aged 21 to 24. This goes up to £7.20 once you turn 25. 
 - Calculating how much tax you'll pay as adult is complicated. Online tools such as [[http://www.moneysavingexpert.com/tax-calculator/][this one]] can give you good indication though. Earning the minimum wage (or close to it) means that you won't pay very much tax at all. This increases as your earnings go up.
 - Our model will assume you pay a third of your pay in tax and pension contributions, although things aren't quite that simple in real life.
 - We'll make a rough-and-ready pay calculator to estimate how much pay you could take home after you've paid your [[http://www.bbc.co.uk/news/uk-england-16744819][tax]] and [[https://www.gov.uk/national-insurance/what-national-insurance-is-for][National Insurance]]. 
-** Download It
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: document
-:END:
-- Download [[./doc/budget.xlsx][this file]] to your H: drive, and save it in a new folder.
 ** Try It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: try

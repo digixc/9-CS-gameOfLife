@@ -1,0 +1,127 @@
+#+STARTUP:indent
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+#+HTML_HEAD_EXTRA: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+#+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil 
+#+TITLE: The Game of Life
+#+AUTHOR: Stephen Brown
+
+#+BEGIN_HTML
+<div class=ribbon>
+<a href="https://github.com/stsb11/9-CS-gameOfLife">Fork me on GitHub</a>
+</div>
+#+END_HTML
+
+* COMMENT Use as a template
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Learn It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+
+** Research It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: research
+:END:
+
+** Design It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: design
+:END:
+
+** Build It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: build
+:END:
+
+** Test It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: test
+:END:
+
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
+
+** Document It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: document
+:END:
+
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+
+** Program It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: program
+:END:
+
+** Try It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+
+** Badge It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: badge
+:END:
+
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+
+* I got bills
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+- LunchMoney Lewis made a good point.
+- Some jobs pay weekly, but most pay you once a month. If you don't plan carefully with your expenditure, you'll find yourself in financial difficulty. 
+- As people sometimes say, its easy to find that there's too much month left at the end of the money, and going overdrawn (i.e. having a negative bank balance) can become very expensive, very quickly. 
+- Today, you'll learn about how much it actually costs to run a household, using a spreadsheet to help you model it. 
+- Some adults use a spreadsheet to help them keep track of their finances, to avoid going overdrawn before the next pay-day.
+** Download It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: document
+:END:
+- Download [[./doc/budget.xlsx][this file]] to your H: drive, and save it in a new folder.
+- Open the spreadsheet in Excel.
+** Learn It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- Your household budget consists of several categories:
+  - Income: Money coming in from your job,
+  - Fixed outgoings: Bills that are predictable and regular, e.g. Rent,
+  - One-off outgoings: Less regular bills, e.g. Annual TV licence,
+  - Unexpected outgoings: Things you can't anticipate, e.g. car breakdown bills.
+** Try It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+- In the outgoings column, write as many different types of bill that you can think of in the left column. Don't worry about the amount yet; this will come later.
+- In the income section, write your monthly /takehome/ pay amount that you calculated in the last lesson. We can always change this later.
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- The next step will be to 
+** Try It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+- Use the data above to complete cells =C19=, =C20= and =C21=. 
+- Write formulae in cells =C23=, =C24= and =C25= to calculate the hourly rate for a job paying £15,000 per year. 
+- Is that more or less than the minimum wage for someone aged 23?
+** Badge  It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: badge
+:END:
+- Complete the formulae above.
+- *Silver:* What is the hourly rate for someone on £20,000 a year?
+- *Gold:* Find the average UK annual salary, and calculate what this is as an hourly rate. What is the weekly /take-home/ pay for this salary?
+- *Platinum:* What is the pre-tax (i.e. not take-home) salary of someone earning £30 per hour?
