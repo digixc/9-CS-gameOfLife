@@ -83,6 +83,7 @@
 - Some jobs pay weekly, but most pay you once a month. If you don't plan carefully with your expenditure, you'll find yourself in financial difficulty. 
 - As people sometimes say, its easy to find that there's too much month left at the end of the money, and going overdrawn (i.e. having a negative bank balance) can become very expensive, very quickly. 
 - Today, you'll learn about how much it actually costs to run a household, using a spreadsheet to help you model it. 
+- Of everything you'll learn in your Computer Science lessons, this is one of the most useful skills (this is technically more ICT that CompSci though).
 - Some adults use a spreadsheet to help them keep track of their finances, to avoid going overdrawn before the next pay-day.
 ** Download It
 :PROPERTIES:
@@ -103,25 +104,34 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: try
 :END:
-- In the outgoings column, write as many different types of bill that you can think of in the left column. Don't worry about the amount yet; this will come later.
-- In the income section, write your monthly /takehome/ pay amount that you calculated in the last lesson. We can always change this later.
+- In the outgoings section (Column =F= on the spreadsheet), write as many different types of bill that you can think of in the left column. 
+- For each bill, guess at what you think the amount you pay for these things is every month. You'll be given example figures later on, but it'll be interesting to see how well your guesses line up with real life. Rent/mortage is already present to get you started off.
+- In the income section, write your monthly /takehome/ pay amount that you calculated in the last lesson into cell =D7=. We'll change this later. If in doubt, write 1100. 
 ** Code It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
 :END:
-- The next step will be to 
+- We've got the elements of a spreadsheet here. We now need to add some formulae to get down to what really matters; how much disposable income you have each week.
+- This is the amount of money you have left each week once all your bills are paid that you can do whatever you want with; buy clothes, go to the cinema, order take-aways and so on. Either earning more money or reducing your bills will make this figure go up. 
+- Write the following formulae: 
+  - In cell =D10= we need a formula to calculate your total income. This will be your salary + your partner's salary + whatever you've already got in your bank account. The formula for this will be ==D4+D7+D8=
+  - In cell =G34= you'll need a formula to sum all the cells in your one-off outgoings column. Look at the formula used in =G23= and see if you can write the right formula in here.
+  - In =L6=, we want to be able to get the total of all your monthly bills. Can you write a formula to do that?
+  - In =L7= we will need a formula to calculate your overall balance: Your total money in - total money out. Write a formula to do this.
+  - In =L8=, write a formula to take the answer from =L7= and divide that by 4.5 to give your weekly disposable income.
+  - Hopefully, this isn't a negative number. What would that mean if it was?
 ** Try It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: try
 :END:
-- Use the data above to complete cells =C19=, =C20= and =C21=. 
-- Write formulae in cells =C23=, =C24= and =C25= to calculate the hourly rate for a job paying £15,000 per year. 
-- Is that more or less than the minimum wage for someone aged 23?
+- Because we've written formulae in all the different cells, you can now be able to change values in certain cells and see the effect this has on your weekly disposable income immediately.
+- Try doubling your monthly take-home pay. You should see the weekly disposable income increase.
+- Let's make this more realistic. Open [[bills.html][this page]] in a new tab, and use these figures for your bills.
 ** Badge  It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: badge
 :END:
 - Complete the formulae above.
-- *Silver:* What is the hourly rate for someone on £20,000 a year?
-- *Gold:* Find the average UK annual salary, and calculate what this is as an hourly rate. What is the weekly /take-home/ pay for this salary?
-- *Platinum:* What is the pre-tax (i.e. not take-home) salary of someone earning £30 per hour?
+- *Silver:* Upload your =budget.xls= file for marking with all the formulae entered.
+- *Gold:* Answer the two questions starting at =K28=, writing your answers in the spaces provided.
+- *Platinum:* Answer the three questions starting at =K34=, writing your answers in the spaces provided.
