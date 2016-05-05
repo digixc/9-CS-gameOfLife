@@ -96,11 +96,11 @@
 :HTML_CONTAINER_CLASS: learn
 :END:
 - We'll start by getting you a job. 
-- Open [[http://www.monster.co.uk][www.Monster.co.uk]] in a new browser tab.
+- Open [[http://www.indeed.co.uk][www.indeed.co.uk]] in a new browser tab.
 - Search for jobs in a 15 mile radius of the School's postcode (PE10 9JE)
 - Find 3 different jobs that you could get which will take someone with no prior experience. Record how much they pay in the provided cells from =F4= to =H6=. 
 - Some of the jobs will quote an hourly rate (e.g. £10 per hour). Others will show an annual salary (e.g. £15k per year). Don't worry about this for now; just record the details available.  
-- Let's start by looking at a job with an hourly rate; the least this will be in the [[https://bournetoinvent.com/projects/9-SC-Flyer/1.html][National Minimum wage]], which in 2016 is £6.70 for someone aged 21 to 24. This goes up to £7.20 once you turn 25. 
+- Let's start by looking at a job with an hourly rate; the least this will be in the [[https://www.gov.uk/national-minimum-wage-rates][National Minimum wage]], which in 2016 is £6.70 for someone aged 21 to 24. This goes up to £7.20 once you turn 25. 
 - Calculating how much tax you'll pay as adult is complicated. Online tools such as [[http://www.moneysavingexpert.com/tax-calculator/][this one]] can give you good indication though. Earning the minimum wage (or close to it) means that you won't pay very much tax at all. This increases as your earnings go up.
 - Our model will assume you pay a third of your pay in tax and pension contributions, although things aren't quite that simple in real life.
 - We'll make a rough-and-ready pay calculator to estimate how much pay you could take home after you've paid your [[http://www.bbc.co.uk/news/uk-england-16744819][tax]] and [[https://www.gov.uk/national-insurance/what-national-insurance-is-for][National Insurance]]. 
@@ -142,6 +142,7 @@
 :HTML_CONTAINER_CLASS: badge
 :END:
 - Complete the formulae above.
-- *Silver:* What is the hourly rate for someone on £20,000 a year?
+- *Silver:* What is the hourly rate for someone on £20,000 a year? Upload a screenshot of your calculations to collect the badge. Use the formulae view.
 - *Gold:* Find the average UK annual salary, and calculate what this is as an hourly rate. What is the weekly /take-home/ pay for this salary?
 - *Platinum:* What is the pre-tax (i.e. not take-home) salary of someone earning £30 per hour?
+
