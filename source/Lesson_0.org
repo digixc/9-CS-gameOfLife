@@ -1,0 +1,203 @@
+#+STARTUP:indent
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+#+HTML_HEAD_EXTRA: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+#+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil 
+#+TITLE: The Game of Life
+#+AUTHOR: Stephen Brown
+
+#+BEGIN_HTML
+<div class=ribbon>
+<a href="https://github.com/stsb11/9-CS-gameOfLife">Fork me on GitHub</a>
+</div>
+#+END_HTML
+
+* COMMENT Use as a template
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Learn It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+
+** Research It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: research
+:END:
+
+** Design It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: design
+:END:
+
+** Build It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: build
+:END:
+
+** Test It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: test
+:END:
+
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
+
+** Document It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: document
+:END:
+
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+
+** Program It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: program
+:END:
+
+** Try It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+
+** Badge It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: badge
+:END:
+
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+
+* The basics - BBQ
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+- To remind ourselves of the basic features of excel we are going to finish a partly completed model of budgeting for a BBQ.
+** Download It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: document
+:END:
+- Download [[./doc/L1_worksheet_s.xlsx][this workbook]]  to your H: drive.
+- Open the spreadsheet in Excel.
+** Learn It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- The spreadsheet has some issues and is incomplete.
+- When complete it will be able to dynamically calculate whether you have gone under or over budget in regards to holding your BBQ.
+- Here is an example of 40 people attending the BBQ:
+[[./img/0-1.png]]
+** Try It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+- We'll need to write some formulae to perform our calculations.
+[[./img/0-2.png]]
+- Apart from the basic maths calculations you will need to know:
+  - Conditional formatting (cell G3)
+
+ #+BEGIN_HTML
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LHY_U4Fg2CE" frameborder="0" allowfullscreen></iframe>
+ #+END_HTML
+
+ - Excel if statement (cell G4)
+
+ #+BEGIN_HTML
+<iframe width="560" height="315" src="https://www.youtube.com/embed/u1LF0uv7eH0" frameborder="0" allowfullscreen></iframe>
+ #+END_HTML
+
+** Badge  It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: badge
+:END:
+- *Silver:* You have been asked to plan for 60 people:
+ - Burgers = 48
+ - Hotdogs = 12
+ - Drinks =  1/5 of the guests Orange, 4/5 Coke
+- Is £120.00 sufficient to pay for the BBQ?
+- Upload a screen shot of your completed spreadsheet.
+
+* The basics - Olympic data
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+- Excel is very good tool to use when looking at a large data set and trying to extract some information.
+- We will try and analyse some Olympic medal data to answer some questions
+** Download It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: document
+:END:
+- Download [[./doc/OlympicMedals.xlsx][this workbook]]  to your H: drive.
+- Open the spreadsheet in Excel
+** Learn It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- [[https://www.youtube.com/watch?v%3DO4Bh0TaCRKQ][Autofiler and sort]]
+- [[https://www.youtube.com/watch?v%3DkofjxLIIEnQ][Find and replace]]
+- [[https://www.youtube.com/watch?v%3DoNG8JFPKmqQ][Countif]]
+** Badge It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: badge
+:END:
+
+- *Gold:* Answer the following questions in the Medal Analysis tab of the workbook 
+  - What is the total of all medals awarded?
+  -	Who has won the most gold medals in a single sport, in a single year?
+  -	How may athletes names are missing?
+  -	Replace the missing names with Unknown.
+  -	Sort the data by athlete, who appears last on the list?
+  -	Sort the data A-Z by country then A-Z by athlete, who is last on the list?
+  -	Create a new tab called Brazil, copy and paste all the Brazil data to this new tab.
+  -	How old was the youngest medal winner from any country?
+  -	How many medals where awarded for Ice Hockey in total?
+  -	What was the average age of all the athletes?
+  -	How many Olympics did Natalie Ward win 1 or more metals in?
+* The basics - Science, maths and graphs
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+- In this lesson you will learn how to visually represent data.
+** Download It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: document
+:END:
+- Download [[./doc/L3_ScienceMathsGraphs.xlsx][this workbook]] to your H: drive.
+- Open the spreadsheet in Excel
+** Learn It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- All graphs MUST:
+  - Have a title
+  - Have axis labels
+  - Be pleasing to the eye
+  - Make the data easier to undstand compared to looking at the data itself
+  - Use a type of graph that is correct for the data set
+- Basic graphs
+  #+BEGIN_HTML
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7vkIB7VN75k" frameborder="0" allowfullscreen></iframe>
+  #+END_HTML
+- Graph features
+  #+BEGIN_HTML
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jglgJnHcatk" frameborder="0" allowfullscreen></iframe>
+  #+END_HTML
+** Badge It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: badge
+:END:
+- *Platinum* The workbook has several worksheets you will need to add a graph to each.
+  - Population - Plot a bar chart of population vs country
+  - Temperature - Plot a line graph of date vs minimum temperature
+  - Linear1 – Plot a graph representing the equation y = x + 2
+  - Linear2 - Plot a graph representing the equation y = 2x + 4
+  - Quadratic - Plot a graph representing the equation y = -2(x*x)
+  - Heating Curve – use the image to populated the data and plot a line graph
+  - Raw Temp – use "text to columns" to clean up the data and plot a of year and month vs hours of sunshine
