@@ -79,57 +79,67 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
-- To remind ourselves of the basic features of excel we are going to finish a partly completed model of budgeting for a BBQ.
+- You may or may not have used a spreadsheet before.
+- In any event, it's probably worth recapping the basic vocabulary used in a spreadsheet, which will help you in the coming lessons.
+- The tutorial below walks you through the vocabulary of spreadsheets, writing simple formulae, using AutoSum and using formula replication to save time.
+#+BEGIN_HTML
+<iframe width="650" height="393" src="https://www.youtube.com/embed/KLbqxTbaGPQ" frameborder="0" allowfullscreen></iframe>
+#+END_HTML
+- Try the different techniques for yourself as you watch the tutorial. When you're done, see if you can write out all the odd numbers from 5 to 51, then add them all up. 
+* The BBQ
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+- To remind ourselves of the basic features of Excel we are going to finish a partly completed model of a budget for a BBQ.
 ** Download It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: document
 :END:
-- Download [[./doc/L1_worksheet_s.xlsx][this workbook]]  to your H: drive.
+- Download [[./doc/L1_worksheet_s.xlsx][this workbook]] to your H: drive.
 - Open the spreadsheet in Excel.
 ** Learn It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
 :END:
+- Let's pretend you want to host a large BBQ, which you and your friends will all contribute to the cost of.
+- A friend has started to produce a spreadsheet to hold all the information you'll need to work out if you have enough money.
 - The spreadsheet has some issues and is incomplete.
 - When complete it will be able to dynamically calculate whether you have gone under or over budget in regards to holding your BBQ.
-- Here is an example of 40 people attending the BBQ:
+- Here is an example of 40 people attending the BBQ, which is what we're working towards:
 [[./img/0-1.png]]
 ** Try It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: try
 :END:
-- We'll need to write some formulae to perform our calculations.
+- We'll need to write some formulae to perform our calculations. 
+- The formulae you need are all on show in the screenshot below:
 [[./img/0-2.png]]
 - Apart from the basic maths calculations you will need to know:
   - Conditional formatting (cell G3)
-
  #+BEGIN_HTML
 <iframe width="560" height="315" src="https://www.youtube.com/embed/LHY_U4Fg2CE" frameborder="0" allowfullscreen></iframe>
  #+END_HTML
-
  - Excel if statement (cell G4)
-
  #+BEGIN_HTML
 <iframe width="560" height="315" src="https://www.youtube.com/embed/u1LF0uv7eH0" frameborder="0" allowfullscreen></iframe>
  #+END_HTML
-
 ** Badge  It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: badge
 :END:
-- *Silver:* You have been asked to plan for 60 people:
- - Burgers = 48
- - Hotdogs = 12
- - Drinks =  1/5 of the guests Orange, 4/5 Coke
-- Is £120.00 sufficient to pay for the BBQ?
-- Upload a screen shot of your completed spreadsheet.
-
+- *Silver:* You have been asked to plan a BBQ for 60 people, using the following figures:
+ - Burgers: 48
+ - Hot-dogs: 12
+ - Drinks:  1/5 of the guests want Orange, 4/5 want Coke.
+- You need to know if £120.00 is sufficient to pay for the cost of your BBQ.
+- Complete the formulae above and tidy the spreadsheet, then change the variables (e.g. number of burgers) to those above.
+- Upload a screen shot of your completed spreadsheet to collect the badge.
 * The basics - Olympic data
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
 - Excel is very good tool to use when looking at a large data set and trying to extract some information.
-- We will try and analyse some Olympic medal data to answer some questions
+- We will try and analyse some Olympic medal data to answer some questions.
 ** Download It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: document
@@ -140,9 +150,9 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
 :END:
-- [[https://www.youtube.com/watch?v%3DO4Bh0TaCRKQ][Autofiler and sort]]
+- [[https://www.youtube.com/watch?v%3DO4Bh0TaCRKQ][Autofilter and sort]]
 - [[https://www.youtube.com/watch?v%3DkofjxLIIEnQ][Find and replace]]
-- [[https://www.youtube.com/watch?v%3DoNG8JFPKmqQ][Countif]]
+- [[https://www.youtube.com/watch?v%3DoNG8JFPKmqQ][CountIf]]
 ** Badge It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: badge
