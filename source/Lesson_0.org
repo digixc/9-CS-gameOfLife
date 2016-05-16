@@ -123,6 +123,10 @@
  #+BEGIN_HTML
 <iframe width="560" height="315" src="https://www.youtube.com/embed/u1LF0uv7eH0" frameborder="0" allowfullscreen></iframe>
  #+END_HTML
+- If you're struggling to complete the formulae in this scenario, this video tutorial will help you along:
+ #+BEGIN_HTML
+<iframe width="650" height="393" src="https://www.youtube.com/embed/7vYa_n5ybm8" frameborder="0" allowfullscreen></iframe>
+ #+END_HTML
 ** Badge  It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: badge
