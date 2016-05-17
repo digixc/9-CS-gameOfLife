@@ -89,7 +89,7 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: document
 :END:
-- Download [[./doc/budget.xlsx][this file]] to your H: drive, and save it in a new folder.
+- Download [[./doc/budget2.xls][this file]] to your H: drive, and save it in a new folder.
 - Open the spreadsheet in Excel.
 ** Learn It
 :PROPERTIES:

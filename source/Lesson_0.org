@@ -157,6 +157,10 @@
 - [[https://www.youtube.com/watch?v%3DO4Bh0TaCRKQ][Autofilter and sort]]
 - [[https://www.youtube.com/watch?v%3DkofjxLIIEnQ][Find and replace]]
 - [[https://www.youtube.com/watch?v%3DoNG8JFPKmqQ][CountIf]]
+- If you're struggling with these concepts, this video tutorial will help explain the techniques you need to complete the badge tasks:
+ #+BEGIN_HTML
+<iframe width="650" height="393" src="https://www.youtube.com/embed/hfNJCOQm_Tc" frameborder="0" allowfullscreen></iframe>
+ #+END_HTML
 ** Badge It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: badge
