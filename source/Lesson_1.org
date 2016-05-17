@@ -137,6 +137,10 @@
 - Use the data above to complete cells =C19=, =C20= and =C21=. 
 - Write formulae in cells =C23=, =C24= and =C25= to calculate the hourly rate for a job paying £15,000 per year. 
 - Is that more or less than the minimum wage for someone aged 23?
+- If you're stuck on how to complete the formulae for this lesson, the tutorial below will walk you through it:
+#+BEGIN_HTML
+<iframe width="650" height="393" src="https://www.youtube.com/embed/HCtuLNYGiNk" frameborder="0" allowfullscreen></iframe>
+#+END_HTML
 ** Badge  It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: badge

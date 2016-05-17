@@ -100,6 +100,9 @@
   - Fixed outgoings: Bills that are predictable and regular, e.g. Rent,
   - One-off outgoings: Less regular bills, e.g. Annual TV licence,
   - Unexpected outgoings: Things you can't anticipate, e.g. car breakdown bills.
+- Think about the different bills that you might encounter in a real-life household, and note down how much you think they might be each month. 
+- Once you've come up with a few, click [[./bills.html][here]] to see my list, and see how your list compares
+- Did you guess too low? Too high? About right?
 ** Try It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: try
@@ -126,7 +129,12 @@
 :END:
 - Because we've written formulae in all the different cells, you can now be able to change values in certain cells and see the effect this has on your weekly disposable income immediately.
 - Try doubling your monthly take-home pay. You should see the weekly disposable income increase.
-- Let's make this more realistic. Open [[bills.html][this page]] in a new tab, and use these figures for your bills.
+- Let's make this more realistic. Open [[./bills.html][this page]] in a new tab, and use these figures for your bills.
+- You should now have a complete spreadsheet model of a household budget. 
+- If you're struggling, the video tutorial below will walk you through completing this task.
+#+BEGIN_HTML
+<iframe width="650" height="393" src="https://www.youtube.com/embed/cxiNWp2DIkU" frameborder="0" allowfullscreen></iframe>
+#+END_HTML
 ** Badge  It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: badge
