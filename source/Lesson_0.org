@@ -199,11 +199,11 @@
   - Be pleasing to the eye
   - Make the data easier to undstand compared to looking at the data itself
   - Use a type of graph that is correct for the data set
-- Basic graphs
+- You can see an overview of drawing different types of graph here:
   #+BEGIN_HTML
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7vkIB7VN75k" frameborder="0" allowfullscreen></iframe>
+<iframe width="650" height="393" src="https://www.youtube.com/embed/PvP2eJpQB6M" frameborder="0" allowfullscreen></iframe>
   #+END_HTML
-- Graph features
+- This guide may also be of some help:
   #+BEGIN_HTML
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jglgJnHcatk" frameborder="0" allowfullscreen></iframe>
   #+END_HTML
@@ -212,10 +212,10 @@
 :HTML_CONTAINER_CLASS: badge
 :END:
 - *Platinum* The workbook has several worksheets you will need to add a graph to each.
-  - Population - Plot a bar chart of population vs country
-  - Temperature - Plot a line graph of date vs minimum temperature
-  - Linear1 – Plot a graph representing the equation y = x + 2
-  - Linear2 - Plot a graph representing the equation y = 2x + 4
-  - Quadratic - Plot a graph representing the equation y = -2(x*x)
-  - Heating Curve – use the image to populated the data and plot a line graph
-  - Raw Temp – use "text to columns" to clean up the data and plot a of year and month vs hours of sunshine
+  - /Population:/ Plot a bar chart of population vs country
+  - /Temperature:/ Plot a line graph of date vs minimum temperature
+  - /Linear1:/ Plot a graph representing the equation y = x + 2
+  - /Linear2:/ Plot a graph representing the equation y = 2x + 4
+  - /Quadratic:/ Plot a graph representing the equation y = -2(x*x)
+  - /Heating Curve:/ use the image to estimate temperatures, and use these to populate the data table before plotting a line graph
+  - /Raw Temp:/ use "text to columns" to clean up the data and plot the number of hours of sunshine for each month in 1957
