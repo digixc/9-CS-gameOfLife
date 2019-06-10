@@ -1,0 +1,5 @@
+1.1 = Tuition and maintenance loans
+1.2 = £9250 tuition and £8,944 maintenance
+
+3.1 = £577
+3.2 = 30 years, £51,160
