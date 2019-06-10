@@ -178,8 +178,10 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
-<link rel="stylesheet" type="text/css" href="pages/css/styles.css"/>
+<link rel="stylesheet" type="text/css" href="css/styles.css"/>
 <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+<script src="js/navbar.js" type="text/javascript"></script>
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -230,62 +232,83 @@ for the JavaScript code in this tag.
 <body>
 <div id="content">
 <h1 class="title">The Game of Life</h1>
-<div id="table-of-contents">
-<h2>Table of Contents</h2>
-<div id="text-table-of-contents">
-<ul>
-<li><a href="#org8078158">Lesson 1 - The very basics</a></li>
-<li><a href="#orgf10105e">Lesson 2 - Earning a crust</a></li>
-<li><a href="#org6315e98">Lesson 3 - I got bills</a></li>
-<li><a href="#orgbeb6ef7">Lesson 4 - Rent or Buy</a></li>
-<li><a href="#org0d46951">Lesson 5 - Broom broom!</a></li>
-<li><a href="#org3a68f60">Lesson 6 - Family Fortunes</a></li>
-<li><a href="#orge8ced9f">Homework</a></li>
-</ul>
-</div>
-</div>
 <div class="HTML">
 <p>
-&lt;div class=ribbon&gt;
-&lt;a href="<a href="https://github.com/stsb11/9-CS-gameOfLife">https://github.com/stsb11/9-CS-gameOfLife</a>"&gt;Fork me on GitHub&lt;/a&gt;
+  &lt;div class="github-fork-ribbon-wrapper left"&gt;
+    &lt;div class="github-fork-ribbon"&gt;
+      &lt;a href="<a href="https://github.com/digixc/9-CS-gameOfLife.git">https://github.com/digixc/9-CS-gameOfLife.git</a>"&gt;Fork me on GitHub&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;div id="stickyribbon"&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href="1<sub>Lesson.html</sub>"&gt;Week1&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="2<sub>Lesson.html</sub>"&gt;Week2&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="3<sub>Lesson.html</sub>"&gt;Week3&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="4<sub>Lesson.html</sub>"&gt;Week4&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="5<sub>Lesson.html</sub>"&gt;Week5&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="homework.html"&gt;Homework Tasks&lt;/a&gt;&lt;/li&gt;
+</p>
+
+<p>
+&lt;li&gt;&lt;a href="evaluation.html"&gt;End of Unit Evaluation&lt;/a&gt;&lt;/li&gt;
+</p>
+
+<p>
+  &lt;/ul&gt;
 &lt;/div&gt;
 </p>
 
 </div>
-<div id="outline-container-org8078158" class="outline-2 link-heading">
-<h2 id="org8078158"><a href="pages/Lesson_0.html">Lesson 1 - The very basics</a></h2>
-<div class="outline-text-2" id="text-org8078158">
+<div id="outline-container-org4c638fc" class="outline-2 activity">
+<h2 id="org4c638fc"><span class="section-number-2">1</span> Homework Tasks</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+
+<div id="outline-container-org0bc5989" class="outline-3 badge">
+<h3 id="org0bc5989">Homework Task 1 - Cost of University</h3>
+<div class="outline-text-3" id="text-org0bc5989">
+<ul class="org-ul">
+<li>Research University and the <b>costs</b> involved in <i>going</i>, <i>living</i> and eventually <i>repaying</i>!</li>
+
+<li>Using <a href="https://www.ucas.com/finance/undergraduate-tuition-fees-and-student-loans">this government website</a> answer the following questions:
+<ul class="org-ul">
+<li>1. What are the <b>two types</b> of <i>student loans</i>?</li>
+<li>2. What are the <b>maximum amounts</b> for <i>each</i>?</li>
+</ul></li>
+
+<li>Using <a href="https://www.timeshighereducation.com/student/advice/cost-studying-university-uk#survey-answer">this news website</a> complete the following:
+<ul class="org-ul">
+<li>1. List the <b>costs</b> of at least <b>3 essential outgoings</b> and <b>3 lifestyle outgoings</b> at university</li>
+<li>2. How much will you have <i>left over</i> a month with the <b>maximum</b> amount of <b>student loan</b>?</li>
+</ul></li>
+
+<li>After <i>3 years</i> of university, you would have around <b>£40,000</b> of <i>debt</i></li>
+<li>This may seem scary but let's actually look at how much you would repay&#x2026;</li>
+<li>Using <a href="https://www.student-loan-calculator.co.uk/">this website</a> and the notes you have from the first task, complete the following:
+<ul class="org-ul">
+<li>1. Find out <b>how much</b> of your <b>£40,000</b> of <i>debt</i> you <i>will have repayed</i> after <b>5 years</b>, with a <i>starting salary</i> of <b>£25,000</b></li>
+<li>2. Find out <b>how long</b> it will take for you to <i>fully pay off</i> your <b>£40,000</b> of <i>debt</i> and what your <i>final salary</i> would be</li>
+</ul></li>
+</ul>
 </div>
 </div>
 
-<div id="outline-container-orgf10105e" class="outline-2 link-heading">
-<h2 id="orgf10105e"><a href="pages/Lesson_1.html">Lesson 2 - Earning a crust</a></h2>
-<div class="outline-text-2" id="text-orgf10105e">
+<div id="outline-container-orgb2641d9" class="outline-3 badge">
+<h3 id="orgb2641d9">Homework Task 2</h3>
+<div class="outline-text-3" id="text-orgb2641d9">
+<ul class="org-ul">
+<li>coming soon</li>
+</ul>
 </div>
 </div>
-<div id="outline-container-org6315e98" class="outline-2 link-heading">
-<h2 id="org6315e98"><a href="pages/Lesson_2.html">Lesson 3 - I got bills</a></h2>
-<div class="outline-text-2" id="text-org6315e98">
+
+<div id="outline-container-org9b8cf66" class="outline-3 badge">
+<h3 id="org9b8cf66">Homework Task 3</h3>
+<div class="outline-text-3" id="text-org9b8cf66">
+<ul class="org-ul">
+<li>Coming soon</li>
+</ul>
 </div>
-</div>
-<div id="outline-container-orgbeb6ef7" class="outline-2 link-heading">
-<h2 id="orgbeb6ef7"><a href="./pages/Lesson_3.html">Lesson 4 - Rent or Buy</a></h2>
-<div class="outline-text-2" id="text-orgbeb6ef7">
-</div>
-</div>
-<div id="outline-container-org0d46951" class="outline-2 link-heading">
-<h2 id="org0d46951"><a href="./pages/Lesson_4.html">Lesson 5 - Broom broom!</a></h2>
-<div class="outline-text-2" id="text-org0d46951">
-</div>
-</div>
-<div id="outline-container-org3a68f60" class="outline-2 link-heading">
-<h2 id="org3a68f60"><a href="./pages/Lesson_5.html">Lesson 6 - Family Fortunes</a></h2>
-<div class="outline-text-2" id="text-org3a68f60">
-</div>
-</div>
-<div id="outline-container-orge8ced9f" class="outline-2 link-heading">
-<h2 id="orge8ced9f"><a href="pages/homework.html">Homework</a></h2>
-<div class="outline-text-2" id="text-orge8ced9f">
 </div>
 </div>
 </div>
