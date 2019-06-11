@@ -1,0 +1,131 @@
+
+#+STARTUP:indent
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+#+HTML_HEAD_EXTRA: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+#+HTML_HEAD_EXTRA: <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+#+HTML_HEAD_EXTRA: <script src="js/navbar.js" type="text/javascript"></script>
+#+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil toc:nil
+
+#+TITLE: The Game of Life
+#+AUTHOR: Xiaohui Ellis
+
+#+BEGIN_HTML
+  <div class="github-fork-ribbon-wrapper left">
+    <div class="github-fork-ribbon">
+      <a href="https://github.com/digixc/9-CS-gameOfLife.git">Fork me on GitHub</a>
+    </div>
+  </div>
+<div id="stickyribbon">
+    <ul>
+      <li><a href="1_Lesson.html">Week1</a></li>
+      <li><a href="2_Lesson.html">Week2</a></li>
+      <li><a href="3_Lesson.html">Week3</a></li>
+      <li><a href="4_Lesson.html">Week4</a></li>
+      <li><a href="5_Lesson.html">Week5</a></li>
+      <li><a href="homework.html">Homework Tasks</a></li>
+
+      <li><a href="evaluation.html">End of Unit Evaluation</a></li>
+
+    </ul>
+  </div>
+#+END_HTML
+* COMMENT Use as a template
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Learn It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+
+** Research It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: research
+:END:
+
+** Design It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: design
+:END:
+
+** Build It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: build
+:END:
+
+** Test It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: test
+:END:
+
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
+
+** Document It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: document
+:END:
+
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+
+** Program It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: program
+:END:
+
+** Try It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+
+** Badge It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: badge
+:END:
+
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+
+* Homework Tasks
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+
+** Homework Task 1 - Cost of University
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: badge
+:END:
+- Research University and the *costs* involved in /going/, /living/ and eventually /repaying/!
+
+- Using [[https://www.ucas.com/finance/undergraduate-tuition-fees-and-student-loans][this government website]] answer the following questions:
+  + What are the *two types* of /student loans/?
+  + What are the *maximum amounts* for /each/?
+
+- Using [[https://www.student-loan-calculator.co.uk/][this website]] and the notes you have from the first task, complete the following:
+  + Find out /how much/ of your student loans you /will have repayed/ after *5 years*, with a /starting salary of *£25,000* 
+  + Find out /how long/ it will take for you to *fully pay off* your /student loans/
+
+- Using [[https://www.timeshighereducation.com/student/advice/cost-studying-university-uk#survey-answer][this news website]] complete the following:
+  + List the *costs* of at least *3 essential outgoings* and *3 lifestyle outgoings* at university
+  + How much will you have /left over/ a month with the *maximum* amount of *student loan*?
+
+
+
+** Homework Task 2
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: badge
+:END:
++ coming soon
+
+** Homework Task 3
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: badge
+:END:
++ Coming soon
