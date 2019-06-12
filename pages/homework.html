@@ -3,28 +3,21 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>The Game of Life</title>
-<meta name="generator" content="Org mode" />
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
-  .title  { text-align: center;
-             margin-bottom: .2em; }
-  .subtitle { text-align: center;
-              font-size: medium;
-              font-weight: bold;
-              margin-top:0; }
+  .title  { text-align: center; }
   .todo   { font-family: monospace; color: red; }
-  .done   { font-family: monospace; color: green; }
-  .priority { font-family: monospace; color: orange; }
+  .done   { color: green; }
   .tag    { background-color: #eee; font-family: monospace;
             padding: 2px; font-size: 80%; font-weight: normal; }
   .timestamp { color: #bebebe; }
   .timestamp-kwd { color: #5f9ea0; }
-  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
-  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
-  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
   .underline { text-decoration: underline; }
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
@@ -51,111 +44,27 @@
     border: 1px solid black;
   }
   pre.src:hover:before { display: inline;}
-  /* Languages per Org manual */
-  pre.src-asymptote:before { content: 'Asymptote'; }
-  pre.src-awk:before { content: 'Awk'; }
-  pre.src-C:before { content: 'C'; }
-  /* pre.src-C++ doesn't work in CSS */
-  pre.src-clojure:before { content: 'Clojure'; }
-  pre.src-css:before { content: 'CSS'; }
-  pre.src-D:before { content: 'D'; }
-  pre.src-ditaa:before { content: 'ditaa'; }
-  pre.src-dot:before { content: 'Graphviz'; }
-  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
   pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-fortran:before { content: 'Fortran'; }
-  pre.src-gnuplot:before { content: 'gnuplot'; }
-  pre.src-haskell:before { content: 'Haskell'; }
-  pre.src-hledger:before { content: 'hledger'; }
-  pre.src-java:before { content: 'Java'; }
-  pre.src-js:before { content: 'Javascript'; }
-  pre.src-latex:before { content: 'LaTeX'; }
-  pre.src-ledger:before { content: 'Ledger'; }
-  pre.src-lisp:before { content: 'Lisp'; }
-  pre.src-lilypond:before { content: 'Lilypond'; }
-  pre.src-lua:before { content: 'Lua'; }
-  pre.src-matlab:before { content: 'MATLAB'; }
-  pre.src-mscgen:before { content: 'Mscgen'; }
-  pre.src-ocaml:before { content: 'Objective Caml'; }
-  pre.src-octave:before { content: 'Octave'; }
-  pre.src-org:before { content: 'Org mode'; }
-  pre.src-oz:before { content: 'OZ'; }
-  pre.src-plantuml:before { content: 'Plantuml'; }
-  pre.src-processing:before { content: 'Processing.js'; }
-  pre.src-python:before { content: 'Python'; }
-  pre.src-R:before { content: 'R'; }
-  pre.src-ruby:before { content: 'Ruby'; }
-  pre.src-sass:before { content: 'Sass'; }
-  pre.src-scheme:before { content: 'Scheme'; }
-  pre.src-screen:before { content: 'Gnu Screen'; }
-  pre.src-sed:before { content: 'Sed'; }
-  pre.src-sh:before { content: 'shell'; }
-  pre.src-sql:before { content: 'SQL'; }
-  pre.src-sqlite:before { content: 'SQLite'; }
-  /* additional languages in org.el's org-babel-load-languages alist */
-  pre.src-forth:before { content: 'Forth'; }
-  pre.src-io:before { content: 'IO'; }
-  pre.src-J:before { content: 'J'; }
-  pre.src-makefile:before { content: 'Makefile'; }
-  pre.src-maxima:before { content: 'Maxima'; }
-  pre.src-perl:before { content: 'Perl'; }
-  pre.src-picolisp:before { content: 'Pico Lisp'; }
-  pre.src-scala:before { content: 'Scala'; }
-  pre.src-shell:before { content: 'Shell Script'; }
-  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
-  /* additional language identifiers per "defun org-babel-execute"
-       in ob-*.el */
-  pre.src-cpp:before  { content: 'C++'; }
-  pre.src-abc:before  { content: 'ABC'; }
-  pre.src-coq:before  { content: 'Coq'; }
-  pre.src-groovy:before  { content: 'Groovy'; }
-  /* additional language identifiers from org-babel-shell-names in
-     ob-shell.el: ob-shell is the only babel language using a lambda to put
-     the execution function name together. */
-  pre.src-bash:before  { content: 'bash'; }
-  pre.src-csh:before  { content: 'csh'; }
-  pre.src-ash:before  { content: 'ash'; }
-  pre.src-dash:before  { content: 'dash'; }
-  pre.src-ksh:before  { content: 'ksh'; }
-  pre.src-mksh:before  { content: 'mksh'; }
-  pre.src-posh:before  { content: 'posh'; }
-  /* Additional Emacs modes also supported by the LaTeX listings package */
-  pre.src-ada:before { content: 'Ada'; }
-  pre.src-asm:before { content: 'Assembler'; }
-  pre.src-caml:before { content: 'Caml'; }
-  pre.src-delphi:before { content: 'Delphi'; }
-  pre.src-html:before { content: 'HTML'; }
-  pre.src-idl:before { content: 'IDL'; }
-  pre.src-mercury:before { content: 'Mercury'; }
-  pre.src-metapost:before { content: 'MetaPost'; }
-  pre.src-modula-2:before { content: 'Modula-2'; }
-  pre.src-pascal:before { content: 'Pascal'; }
-  pre.src-ps:before { content: 'PostScript'; }
-  pre.src-prolog:before { content: 'Prolog'; }
-  pre.src-simula:before { content: 'Simula'; }
-  pre.src-tcl:before { content: 'tcl'; }
-  pre.src-tex:before { content: 'TeX'; }
-  pre.src-plain-tex:before { content: 'Plain TeX'; }
-  pre.src-verilog:before { content: 'Verilog'; }
-  pre.src-vhdl:before { content: 'VHDL'; }
-  pre.src-xml:before { content: 'XML'; }
-  pre.src-nxml:before { content: 'XML'; }
-  /* add a generic configuration mode; LaTeX export needs an additional
-     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
-  pre.src-conf:before { content: 'Configuration File'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
 
   table { border-collapse:collapse; }
   caption.t-above { caption-side: top; }
   caption.t-bottom { caption-side: bottom; }
   td, th { vertical-align:top;  }
-  th.org-right  { text-align: center;  }
-  th.org-left   { text-align: center;   }
-  th.org-center { text-align: center; }
-  td.org-right  { text-align: right;  }
-  td.org-left   { text-align: left;   }
-  td.org-center { text-align: center; }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
   dt { font-weight: bold; }
-  .footpara { display: inline; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
@@ -175,7 +84,6 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
 <link rel="stylesheet" type="text/css" href="css/styles.css"/>
@@ -187,7 +95,7 @@
 @licstart  The following is the entire license notice for the
 JavaScript code in this tag.
 
-Copyright (C) 2012-2018 Free Software Foundation, Inc.
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
 
 The JavaScript code in this tag is free software: you can
 redistribute it and/or modify it under the terms of the GNU
@@ -232,49 +140,44 @@ for the JavaScript code in this tag.
 <body>
 <div id="content">
 <h1 class="title">The Game of Life</h1>
-<div class="HTML">
-<p>
-  &lt;div class="github-fork-ribbon-wrapper left"&gt;
-    &lt;div class="github-fork-ribbon"&gt;
-      &lt;a href="<a href="https://github.com/digixc/9-CS-gameOfLife.git">https://github.com/digixc/9-CS-gameOfLife.git</a>"&gt;Fork me on GitHub&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;div id="stickyribbon"&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href="1<sub>Lesson.html</sub>"&gt;Week1&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href="2<sub>Lesson.html</sub>"&gt;Week2&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href="3<sub>Lesson.html</sub>"&gt;Week3&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href="4<sub>Lesson.html</sub>"&gt;Week4&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href="5<sub>Lesson.html</sub>"&gt;Week5&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href="homework.html"&gt;Homework Tasks&lt;/a&gt;&lt;/li&gt;
-</p>
+  <div class="github-fork-ribbon-wrapper left">
+    <div class="github-fork-ribbon">
+      <a href="https://github.com/digixc/9-CS-gameOfLife.git">Fork me on GitHub</a>
+    </div>
+  </div>
+<div id="stickyribbon">
+    <ul>
+      <li><a href="1_Lesson.html">Week1</a></li>
+      <li><a href="2_Lesson.html">Week2</a></li>
+      <li><a href="3_Lesson.html">Week3</a></li>
+      <li><a href="4_Lesson.html">Week4</a></li>
+      <li><a href="5_Lesson.html">Week5</a></li>
+      <li><a href="homework.html">Homework Tasks</a></li>
 
-<p>
-&lt;li&gt;&lt;a href="evaluation.html"&gt;End of Unit Evaluation&lt;/a&gt;&lt;/li&gt;
-</p>
+      <li><a href="evaluation.html">End of Unit Evaluation</a></li>
 
-<p>
-  &lt;/ul&gt;
-&lt;/div&gt;
-</p>
-
-</div>
-<div id="outline-container-org5de8fd3" class="outline-2 activity">
-<h2 id="org5de8fd3"><span class="section-number-2">1</span> Homework Tasks</h2>
+    </ul>
+  </div>
+<div id="outline-container-sec-1" class="outline-2 activity">
+<h2 id="sec-1"><span class="section-number-2">1</span> Homework Tasks</h2>
 <div class="outline-text-2" id="text-1">
 </div>
 
-<div id="outline-container-orge92e4d0" class="outline-3 badge">
-<h3 id="orge92e4d0">Homework Task 1 - Cost of University</h3>
-<div class="outline-text-3" id="text-orge92e4d0">
+<div id="outline-container-sec-1-1" class="outline-3 badge">
+<h3 id="sec-1-1">Homework Task 1 - Cost of University</h3>
+<div class="outline-text-3" id="text-1-1">
 <ul class="org-ul">
-<li>Research University and the <b>costs</b> involved in <i>going</i>, <i>living</i> and eventually <i>repaying</i>!</li>
+<li>Research University and the <b>costs</b> involved in <i>going</i>, <i>living</i> and eventually <i>repaying</i>!
+</li>
 
 <li>Using <a href="https://www.gov.uk/student-finance/new-fulltime-students">this government website</a> answer the following questions:
 <ul class="org-ul">
-<li>1. What are the <b>two types</b> of <i>student loans</i>?</li>
-<li>2. What are the <b>maximum amounts</b> for <i>each</i> <b>living away from home outside of London</b>?</li>
-</ul></li>
+<li>1. What are the <b>two types</b> of <i>student loans</i>?
+</li>
+<li>2. What are the <b>maximum amounts</b> for <i>each</i> <b>living away from home outside of London</b>?
+</li>
+</ul>
+</li>
 </ul>
 
 
@@ -282,47 +185,58 @@ for the JavaScript code in this tag.
 <ul class="org-ul">
 <li>Using <a href="https://www.timeshighereducation.com/student/advice/cost-studying-university-uk#survey-answer">this news website</a> complete the following:
 <ul class="org-ul">
-<li>1. List the <b>costs</b> of at least <b>3 essential outgoings</b> and <b>3 lifestyle outgoings</b> at university</li>
-<li>2. How much will you have <i>left over</i> a month with the <b>maximum</b> amount of <b>student loan</b>?</li>
-</ul></li>
+<li>1. List the <b>costs</b> of at least <b>3 essential outgoings</b> and <b>3 lifestyle outgoings</b> at university
+</li>
+<li>2. How much will you have <i>left over</i> a month with the <b>maximum</b> amount of <b>student loan</b>?
+</li>
+</ul>
+</li>
 </ul>
 
 
 
 <ul class="org-ul">
-<li>After <i>3 years</i> of university, you would have around <b>£40,000</b> of <i>debt</i></li>
-<li>This may seem scary but let's actually look at how much you would repay&#x2026;</li>
-<li>You will be on <b>Plan 2</b> and the <i>average starting salary</i> for a graduate is <b>£25,000</b></li>
+<li>After <i>3 years</i> of university, you would have around <b>£40,000</b> of <i>debt</i>
+</li>
+<li>This may seem scary but let's actually look at how much you would repay&#x2026;
+</li>
+<li>You will be on <b>Plan 2</b> and the <i>average starting salary</i> for a graduate is <b>£25,000</b> 
+</li>
 <li>Using <a href="https://www.student-loan-calculator.co.uk/">this website</a> complete the following:
 <ul class="org-ul">
-<li>1. Find out <b>how much</b> of your <b>£40,000</b> of <i>debt</i> you <i>will have repayed</i> after <b>5 years</b> on <b>Plan 2</b> with a <i>starting salary</i> of <b>£25,000</b></li>
-<li>2. Find out <b>how long</b> it will take for you to <i>fully pay off</i> your <b>£40,000</b> of <i>debt</i> and what your <i>final salary</i> would be</li>
-</ul></li>
+<li>1. Find out <b>how much</b> of your <b>£40,000</b> of <i>debt</i> you <i>will have repayed</i> after <b>5 years</b> on <b>Plan 2</b> with a <i>starting salary</i> of <b>£25,000</b> 
+</li>
+<li>2. Find out <b>how long</b> it will take for you to <i>fully pay off</i> your <b>£40,000</b> of <i>debt</i> and what your <i>final salary</i> would be
+</li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgc148603" class="outline-3 badge">
-<h3 id="orgc148603">Homework Task 2</h3>
-<div class="outline-text-3" id="text-orgc148603">
+<div id="outline-container-sec-1-2" class="outline-3 badge">
+<h3 id="sec-1-2">Homework Task 2</h3>
+<div class="outline-text-3" id="text-1-2">
 <ul class="org-ul">
-<li>coming soon</li>
+<li>coming soon
+</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgfddd065" class="outline-3 badge">
-<h3 id="orgfddd065">Homework Task 3</h3>
-<div class="outline-text-3" id="text-orgfddd065">
+<div id="outline-container-sec-1-3" class="outline-3 badge">
+<h3 id="sec-1-3">Homework Task 3</h3>
+<div class="outline-text-3" id="text-1-3">
 <ul class="org-ul">
-<li>Coming soon</li>
+<li>Coming soon
+</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+<p class="validation"></p>
 </div>
 </body>
 </html>
