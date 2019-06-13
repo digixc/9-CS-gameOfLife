@@ -126,7 +126,17 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: badge
 :END:
-+ coming soon
++ Spreadsheet has been used in many businesses.
++ There are job roles for those who specialise in spreadsheet
++ Your homework tasks:
+  1. Conduct some online research to find out =two= jobs that require spreadsheet skills. For each job, write down:
+     + the job title
+     + salary
+     + job nature - what the hired person expected to perform
+  2. Conduct some online research to find out how businesses can use spreadsheet. For your research report, you must include:
+     + Descriptions of spreadsheet features that help businesses
++ Write your research in text editor or word or on paper.  Upload your work to www.bournetolearn.com or bring in to hand it in to your teacher.
+
 
 ** Homework Task 3
 :PROPERTIES:
