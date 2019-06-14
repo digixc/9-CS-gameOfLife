@@ -134,7 +134,7 @@
      + salary
      + job nature - what the hired person expected to perform
   2. Conduct some online research to find out how businesses can use spreadsheet. For your research report, you must include:
-     + Descriptions of spreadsheet features that help businesses
+     + Descriptions of spreadsheet features that help businesses. An example of such features may include a small company uses spreadsheet to keeping track of monthly incomes and expenses.
 + Write your research in text editor or word or on paper.  Upload your work to www.bournetolearn.com or bring in to hand it in to your teacher.
 
 
